@@ -15,7 +15,7 @@ const rotate = keyframes`
 const SpinnerIcon: React.FC<SvgProps> = (props) => {
   return (
     <Svg viewBox="0 0 96 96" {...props}>
-      <image width="96" height="96" href="/images/egg/9.png"/>
+      <image width="96" height="96" href="/images/egg/9.png" />
     </Svg>
   );
 };
@@ -24,7 +24,7 @@ const Container = styled.div`
   position: relative;
 `;
 
-const RotatingPancakeIcon = styled(SpinnerIcon)`
+const RotatingDmcIcon = styled(SpinnerIcon)`
   position: absolute;
   top: 0;
   left: 0;
@@ -35,7 +35,7 @@ const RotatingPancakeIcon = styled(SpinnerIcon)`
 const Spinner: React.FC<SpinnerProps> = ({ size = 128 }) => {
   return (
     <Container>
-      <RotatingPancakeIcon width={`${size * 0.5}px`} />
+      <RotatingDmcIcon width={`${size * 0.5}px`} />
     </Container>
   );
 };
